@@ -18,3 +18,7 @@ Deploy และ Run Services
 sh
 Copy code
 sudo docker-compose up -d
+
+
+คำสั่ง restart
+docker-compose restart
