@@ -1,0 +1,20 @@
+docker-compose.yml
+nginx.conf
+เอาไว้นอกสุด
+
+Build และ Push Docker Images ไปที่ Docker Hub:
+sh
+Copy code
+# Build and push Service 1
+docker build -t your-dockerhub-username/service1-image -f Dockerfile.service1 .
+docker push your-dockerhub-username/service1-image
+
+# Build and push Service 2
+docker build -t your-dockerhub-username/service2-image -f Dockerfile.service2 .
+docker push your-dockerhub-username/service2-image
+Deploy และ Run Services
+
+ใน Droplet, รัน Docker Compose:
+sh
+Copy code
+sudo docker-compose up -d
